@@ -1,10 +1,13 @@
 {
   "name": "my-app",
   "version": "1.0.0",
+  "homepage": "https://jac1227.github.io/historical-interactive-map/",
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "devDependencies": {
     "vite": "^6.0.9"
