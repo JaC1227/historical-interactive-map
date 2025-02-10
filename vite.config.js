@@ -1,17 +1,19 @@
 import { defineConfig } from 'vite';
 import { ghPages } from "vite-plugin-gh-pages";
-import copy from "vite=plugin-copy"; 
-
-// Use dynamic import for vite-plugin-copy
-const VitePluginCopy = await import('vite-plugin-copy');
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   base: "/historical-interactive-map/", 
   plugins: [
     ghPages(),
-    copy([
-      { src: "./borders_117AD.geojson" }
-    ])
+    viteStaticCopy({
+      targets: [
+        {
+          src: "./borders_117AD.geojson",
+          dest: ""                      
+        }
+      ]
+    })
   ],
   build: {
     sourcemap: true,

@@ -10,7 +10,8 @@
   "devDependencies": {
     "vite": "^6.0.9",
     "vite-plugin-copy": "^0.1.6",
-    "vite-plugin-gh-pages": "^1.0.1"
+    "vite-plugin-gh-pages": "^1.0.1",
+    "vite-plugin-static-copy": "^2.2.0"
   },
   "dependencies": {
     "ol": "latest"
