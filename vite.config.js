@@ -9,7 +9,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "./borders_117AD.geojson",
+          src: "./200ad.geojson",
           dest: ""                      
         }
       ]

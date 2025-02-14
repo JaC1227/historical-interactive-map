@@ -23,7 +23,7 @@ const map = new Map({
 });
 
 // Load the GeoJSON data
-fetch('borders_117AD.geojson')
+fetch('200ad.geojson')
   .then((response) => response.json())
   .then((data) => {
     console.log('GeoJSON data loaded:', data);
@@ -40,55 +40,75 @@ fetch('borders_117AD.geojson')
       features: features,
     });
 
-    // Layer for blurred borders
+    // Helper function to convert HEX to RGBA
+    function hexToRGBA(hex, opacity) {
+      let r = parseInt(hex.substring(1, 3), 16);
+      let g = parseInt(hex.substring(3, 5), 16);
+      let b = parseInt(hex.substring(5, 7), 16);
+      return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+    }
+
+    // Layer for blurred borders, using GeoJSON properties for colors
     const blurredVectorLayer = new VectorLayer({
       source: vectorSource,
-      style: new Style({
-        fill: new Fill({
-          color: 'rgba(255, 0, 0, 0.2)', // More transparent for smooth fading effect
-        }),
-        stroke: new Stroke({
-          color: 'rgba(255, 0, 0, 0.5)',
-          width: 5, 
-        }),
-      }),
+      style: function (feature) {
+        let fillColor = feature.get('fill') 
+          ? hexToRGBA(feature.get('fill'), feature.get('fill-opacity') || 0.4) 
+          : 'rgba(255, 0, 0, 0.4)'; // Default red
+
+        let strokeColor = feature.get('stroke') 
+          ? hexToRGBA(feature.get('stroke'), feature.get('stroke-opacity') || 0.8) 
+          : 'rgba(255, 0, 0, 0.3)'; // Default red
+
+        return new Style({
+          fill: new Fill({
+            color: fillColor,
+          }),
+          stroke: new Stroke({
+            color: strokeColor,
+            width: feature.get('lineWidth') || 2,
+          }),
+        });
+      },
     });
 
     // Apply blur effect only to this layer
     blurredVectorLayer.on('prerender', function (event) {
       event.context.save();
-      event.context.filter = 'blur(4px)';
+      event.context.filter = 'blur(2px)';
     });
     blurredVectorLayer.on('postrender', function (event) {
       event.context.filter = 'none';
       event.context.restore();
     });
 
-    // Separate layer for text labels (without blur)
+    // Ensure the label layer appears on top
     const labelVectorLayer = new VectorLayer({
       source: vectorSource,
+      declutter: true, 
       style: function (feature) {
         return new Style({
           text: new Text({
-            text: feature.get('name') || '',
-            font: '14px sans-serif',
+            text: feature.get('NAME') || '',
+            font: 'bold 16px sans-serif',
             fill: new Fill({
               color: '#000000',
             }),
             stroke: new Stroke({
-              color: '#ffffff',
-              width: 3,
+              color: '#ffffff', 
+              width: 2, 
             }),
             offsetX: 5,
             offsetY: -10,
           }),
         });
       },
+      zIndex: 999, // Ensure this layer is on top
     });
 
-    // Add both layers to the map
     map.addLayer(blurredVectorLayer);
     map.addLayer(labelVectorLayer);
+
 
     // Fit the map to the extent of the features
     const extent = vectorSource.getExtent();
