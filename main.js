@@ -22,7 +22,7 @@ const map = new Map({
   }),
 });
 
-// Load the GeoJSON data
+// Load GeoJSON data
 fetch('200ad.geojson')
   .then((response) => response.json())
   .then((data) => {
@@ -30,7 +30,7 @@ fetch('200ad.geojson')
     const geojson = new GeoJSON();
     const features = geojson.readFeatures(data);
 
-    // Reproject the features from EPSG:4326 to EPSG:3857
+    // Reproject features | EPSG:4326 to EPSG:3857
     features.forEach((feature) => {
       const geom = feature.getGeometry();
       geom.transform('EPSG:4326', 'EPSG:3857');
@@ -48,7 +48,7 @@ fetch('200ad.geojson')
       return `rgba(${r}, ${g}, ${b}, ${opacity})`;
     }
 
-    // Layer for blurred borders, using GeoJSON properties for colors
+    // Layer for blurred borders, GeoJSON properties for colors
     const blurredVectorLayer = new VectorLayer({
       source: vectorSource,
       style: function (feature) {
@@ -82,7 +82,7 @@ fetch('200ad.geojson')
       event.context.restore();
     });
 
-    // Ensure the label layer appears on top
+    // label layer should be on top
     const labelVectorLayer = new VectorLayer({
       source: vectorSource,
       declutter: true, 
@@ -103,7 +103,7 @@ fetch('200ad.geojson')
           }),
         });
       },
-      zIndex: 999, // Ensure this layer is on top
+      zIndex: 999,
     });
 
     map.addLayer(blurredVectorLayer);
