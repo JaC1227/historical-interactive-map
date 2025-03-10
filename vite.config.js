@@ -10,7 +10,9 @@ export default defineConfig({
       targets: [
         {
           src: "./200ad.geojson",
-          dest: ""                      
+          dest: "",
+          src: "./100ad.geojson",
+          dest: ""                     
         }
       ]
     })
