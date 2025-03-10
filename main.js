@@ -6,9 +6,9 @@ import GeoJSON from 'ol/format/GeoJSON';
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
 import { Fill, Stroke, Style, Text } from 'ol/style';
-import { transform } from 'ol/proj'; // Import the transform function for projections
+import { transform } from 'ol/proj'; // Import transform function for projections
 
-// Initialize the map
+// Initialize map
 const map = new Map({
   target: 'map',
   layers: [
@@ -30,7 +30,7 @@ fetch('200ad.geojson')
     const geojson = new GeoJSON();
     const features = geojson.readFeatures(data);
 
-    // Reproject features | EPSG:4326 to EPSG:3857
+    // Reproject features from EPSG:4326 to EPSG:3857
     features.forEach((feature) => {
       const geom = feature.getGeometry();
       geom.transform('EPSG:4326', 'EPSG:3857');
@@ -48,17 +48,16 @@ fetch('200ad.geojson')
       return `rgba(${r}, ${g}, ${b}, ${opacity})`;
     }
 
-    // Layer for blurred borders, GeoJSON properties for colors
-    const blurredVectorLayer = new VectorLayer({
+    const mapVectorLayer = new VectorLayer({
       source: vectorSource,
       style: function (feature) {
         let fillColor = feature.get('fill') 
-          ? hexToRGBA(feature.get('fill'), feature.get('fill-opacity') || 0.4) 
-          : 'rgba(255, 0, 0, 0.4)'; // Default red
+          ? hexToRGBA(feature.get('fill'), feature.get('fill-opacity') || 0.5) 
+          : 'rgba(133, 133, 133, 0.5)'; // Default grey
 
         let strokeColor = feature.get('stroke') 
-          ? hexToRGBA(feature.get('stroke'), feature.get('stroke-opacity') || 0.8) 
-          : 'rgba(255, 0, 0, 0.3)'; // Default red
+          ? hexToRGBA(feature.get('stroke'), feature.get('stroke-opacity') || 0.2) 
+          : 'rgba(133, 133, 133, 0.3)'; // Default grey
 
         return new Style({
           fill: new Fill({
@@ -66,23 +65,13 @@ fetch('200ad.geojson')
           }),
           stroke: new Stroke({
             color: strokeColor,
-            width: feature.get('lineWidth') || 2,
+            width: feature.get('lineWidth') || 10,
           }),
         });
       },
     });
 
-    // Apply blur effect only to this layer
-    blurredVectorLayer.on('prerender', function (event) {
-      event.context.save();
-      event.context.filter = 'blur(2px)';
-    });
-    blurredVectorLayer.on('postrender', function (event) {
-      event.context.filter = 'none';
-      event.context.restore();
-    });
-
-    // label layer should be on top
+    // Ensure label layer appears on top
     const labelVectorLayer = new VectorLayer({
       source: vectorSource,
       declutter: true, 
@@ -103,14 +92,14 @@ fetch('200ad.geojson')
           }),
         });
       },
-      zIndex: 999,
+      zIndex: 999, // Ensure this layer is on top
     });
 
-    map.addLayer(blurredVectorLayer);
+    map.addLayer(mapVectorLayer);
     map.addLayer(labelVectorLayer);
 
 
-    // Fit the map to the extent of the features
+    // Fit map to extent of features
     const extent = vectorSource.getExtent();
     map.getView().fit(extent, { padding: [50, 50, 50, 50] });
   })
