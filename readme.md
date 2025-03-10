@@ -1,18 +1,25 @@
-# OpenLayers + Vite
+## Project Description
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+This project is an interactive web-based map designed to display historical geopolitical boundaries from different time periods from 1AD to 476AD. The map utilizes OpenLayers for visualization and allows users to switch between multiple GeoJSON files representing various historical eras.
 
-To get started, run the following (requires Node 14+):
 
-    npx create-ol-app my-app --template vite
+## Technologies Used
 
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
+OpenLayers
 
-    cd my-app
-    npm start
+Vite
 
-To generate a build ready for production:
+GeoJSON
 
-    npm run build
 
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+## Future Improvements
+
+Adding more historical data files to expand timeline options.
+
+Implementing markers for significant historical events.
+
+Enhancing the UI for improved user experience.
+
+## Credits
+
+Historical GeoJSON data adapted from https://github.com/aourednik/historical-basemaps 
