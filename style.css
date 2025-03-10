@@ -17,10 +17,37 @@ html, body {
   top: 20px;  
   left: 50%; 
   transform: translateX(-50%); 
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 10px 20px; 
-  border-radius: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-size: 16px;
   font-weight: bold;
   z-index: 1000;
+  text-align: center;
+}
+
+.year-buttons {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.year-buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.year-buttons button:hover {
+  background-color: #45a049;
+}
+
+.year-buttons button:active {
+  background-color: #3e8e41;
 }
