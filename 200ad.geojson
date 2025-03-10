@@ -17,8 +17,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Kush",
         "stroke": "#ffff00",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 20,
+        "stroke-opacity": 0.2,
         "fill": "#fce903",
         "fill-opacity": 0.5
       },
@@ -131,7 +131,7 @@
           ]
         ]
       },
-      "id": 3
+      "id": 0
     },
     {
       "type": "Feature",
@@ -142,8 +142,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Saka Kingdom",
         "stroke": "#8ad500",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#95dd00",
         "fill-opacity": 0.5
       },
@@ -476,7 +476,7 @@
           ]
         ]
       },
-      "id": 3
+      "id": 1
     },
     {
       "type": "Feature",
@@ -487,8 +487,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Satavahanihara",
         "stroke": "#c5890e",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#bfa435",
         "fill-opacity": 0.5
       },
@@ -741,7 +741,7 @@
           ]
         ]
       },
-      "id": 4
+      "id": 2
     },
     {
       "type": "Feature",
@@ -2496,8 +2496,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Han",
         "stroke": "#ff8040",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#ff8040",
         "fill-opacity": 0.5
       },
@@ -3858,7 +3858,7 @@
           ]
         ]
       },
-      "id": 26
+      "id": 23
     },
     {
       "type": "Feature",
@@ -3869,8 +3869,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Magadha",
         "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#4f7d2d",
         "fill-opacity": 0.5
       },
@@ -4195,7 +4195,7 @@
           ]
         ]
       },
-      "id": 26
+      "id": 24
     },
     {
       "type": "Feature",
@@ -10395,8 +10395,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Aksum",
         "stroke": "#005151",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#004f4f",
         "fill-opacity": 0.5
       },
@@ -10513,7 +10513,7 @@
           ]
         ]
       },
-      "id": 48
+      "id": 44
     },
     {
       "type": "Feature",
@@ -11889,8 +11889,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Indo-Parthian Kingdom",
         "stroke": "#00d700",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#00c400",
         "fill-opacity": 0.5
       },
@@ -12035,7 +12035,7 @@
           ]
         ]
       },
-      "id": 51
+      "id": 48
     },
     {
       "type": "Feature",
@@ -12046,8 +12046,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Chola",
         "stroke": "#c8b7fb",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#d3b0ff",
         "fill-opacity": 0.5
       },
@@ -12272,7 +12272,7 @@
           ]
         ]
       },
-      "id": 52
+      "id": 49
     },
     {
       "type": "Feature",
@@ -13061,8 +13061,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Parthian Empire",
         "stroke": "#0080c0",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#0080c0",
         "fill-opacity": 0.5
       },
@@ -13443,7 +13443,7 @@
           ]
         ]
       },
-      "id": 57
+      "id": 52
     },
     {
       "type": "Feature",
@@ -13453,9 +13453,9 @@
         "SUBJECTO": "Roman Empire",
         "BORDERPRECISION": 1,
         "PARTOF": "Roman Empire",
-        "stroke": "#aa0004",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke": "#c60005",
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#aa0004",
         "fill-opacity": 0.5
       },
@@ -20060,7 +20060,7 @@
           ]
         ]
       },
-      "id": 58
+      "id": 53
     },
     {
       "type": "Feature",
@@ -20069,7 +20069,12 @@
         "ABBREVN": "Armenia",
         "SUBJECTO": "Armenia",
         "BORDERPRECISION": 1,
-        "PARTOF": "Armenia"
+        "PARTOF": "Armenia",
+        "stroke": "#ff7575",
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
+        "fill": "#ff7d7d",
+        "fill-opacity": 0.5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20216,7 +20221,7 @@
           ]
         ]
       },
-      "id": 59
+      "id": 54
     },
     {
       "type": "Feature",
@@ -20360,8 +20365,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Goguryeo",
         "stroke": "#fd6468",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#ff5b60",
         "fill-opacity": 0.5
       },
@@ -20494,7 +20499,7 @@
           ]
         ]
       },
-      "id": 60
+      "id": 56
     },
     {
       "type": "Feature",
@@ -20505,8 +20510,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Silla",
         "stroke": "#7396a8",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#5c75a3",
         "fill-opacity": 0.5
       },
@@ -20599,7 +20604,7 @@
           ]
         ]
       },
-      "id": 61
+      "id": 57
     },
     {
       "type": "Feature",
@@ -20610,8 +20615,8 @@
         "BORDERPRECISION": 1,
         "PARTOF": "Baekje",
         "stroke": "#a37272",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
+        "stroke-width": 10,
+        "stroke-opacity": 0.2,
         "fill": "#7a5858",
         "fill-opacity": 0.5
       },
@@ -20744,7 +20749,7 @@
           ]
         ]
       },
-      "id": 62
+      "id": 58
     }
   ]
 }
