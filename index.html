@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="map-label">200 AD</div>
+    <div class="year-buttons">
+      <button onclick="loadMapData('100ad.geojson', '100 AD')">100 AD</button>
+      <button onclick="loadMapData('200ad.geojson', '200 AD')">200 AD</button>
+    </div>
+    <div class="map-label" id="map-label"></div>
     <div id="map" class="map"></div>
     <script type="module" src="main.js"></script>
   </body>
