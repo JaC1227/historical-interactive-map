@@ -34,6 +34,9 @@ function hexToRGBA(hex, opacity) {
 
 // Function to load and display GeoJSON data
 window.loadMapData = function (geojsonFile, yearLabel) {
+  // Save current map center and zoom level
+  const currentCenter = map.getView().getCenter();
+  const currentZoom = map.getView().getZoom();
   fetch(geojsonFile)
     .then((response) => response.json())
     .then((data) => {
@@ -95,9 +98,13 @@ window.loadMapData = function (geojsonFile, yearLabel) {
       map.addLayer(mapVectorLayer);
       map.addLayer(labelVectorLayer);
 
-      // Fit the map to the extent of the features
+      // Fit map to extent of features
       const extent = vectorSource.getExtent();
       map.getView().fit(extent, { padding: [50, 50, 50, 50] });
+
+      // After GeoJSON is loaded, restore previous center and zoom level
+      map.getView().setCenter(currentCenter);
+      map.getView().setZoom(currentZoom);
 
       // Update year label
       document.getElementById('map-label').textContent = yearLabel;
