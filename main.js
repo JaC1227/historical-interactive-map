@@ -162,13 +162,26 @@ window.loadMapData = function (geojsonFile, yearLabel) {
           const coordinates = selectedFeature.getGeometry().getCoordinates();
           const event = selectedFeature.get('event');
           const description = selectedFeature.get('description');
-
-          content.innerHTML = `<strong>${event}</strong><p>${description}</p>`;
+          const source = selectedFeature.get('source'); // Get source property
+      
+          let sourceInfo = "";
+          
+          if (source) {
+            // Check if source looks like a URL
+            if (source.startsWith("http://") || source.startsWith("https://")) {
+              sourceInfo = `<p><a href="${source}" target="_blank">Source</a></p>`;
+            } else {
+              sourceInfo = `<p><strong>Source:</strong> ${source}</p>`;
+            }
+          }
+      
+          content.innerHTML = `<strong>${event}</strong><p>${description}</p>${sourceInfo}`;
           overlay.setPosition(coordinates);
         } else {
           overlay.setPosition(undefined);
         }
-      });
+      });      
+      
 
       // Update year label
       document.getElementById('map-label').textContent = yearLabel;

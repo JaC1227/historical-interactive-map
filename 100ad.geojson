@@ -14731,7 +14731,8 @@
         "description": "Teotihuacán reaches a population of 60,000 to 80,000",
         "marker-color": "#00ca51",
         "marker-size": "medium",
-        "marker-symbol": "circle"
+        "marker-symbol": "circle",
+        "source": "https://en.wikipedia.org/wiki/Teotihuacan#Population"
       },
       "geometry": {
         "coordinates": [
@@ -14749,7 +14750,8 @@
         "marker-color": "#e21b1b",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "The Imperial Roman army reaches 300,000 soldiers"
+        "description": "The Imperial Roman army reaches 300,000 soldiers",
+        "source": "https://en.wikipedia.org/wiki/AD_100"
       },
       "geometry": {
         "coordinates": [
@@ -14767,7 +14769,8 @@
         "marker-color": "#fd5f00",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "Timgad (Thamugas), a Roman colonial town in North Africa, is founded by Roman Emperor Trajan"
+        "description": "Timgad (Thamugas), a Roman colonial town in North Africa, is founded by Roman Emperor Trajan",
+        "source": "LeGlay, Marcel; Voisin, Jean-Louis; Le Bohec, Yann (2001). A History of Rome (Second ed.). Malden, Massachusetts: Blackwell. p. 271. ISBN 0-631-21858-0."
       },
       "geometry": {
         "coordinates": [
@@ -14781,11 +14784,12 @@
     {
       "type": "Feature",
       "properties": {
-        "event": "Emperor Trajan & Frontinus become consuls",
+        "event": "Rome",
         "marker-color": "#8f2124",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "Emperor Trajan and Frontinus become Roman consuls."
+        "description": "Emperor Trajan and Frontinus become Roman consuls.",
+        "source": "https://roman-empire.net/people/list-of-roman-consuls"
       },
       "geometry": {
         "coordinates": [
@@ -14803,7 +14807,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "Pacores (last well-documented king of the Indo-Parthian kingdom) takes the throne."
+        "description": "Pacores (last well-documented king of the Indo-Parthian kingdom) takes the throne.",
+        "source": "https://en.wikipedia.org/wiki/Pacores"
       },
       "geometry": {
         "coordinates": [
