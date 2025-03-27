@@ -150,7 +150,10 @@ window.loadMapData = function (geojsonFile, yearLabel) {
       };
 
       // Add click interaction for event markers
-      const select = new Select();
+      const select = new Select({
+        filter: (feature, layer) => layer === eventVectorLayer,
+      });
+      
       map.addInteraction(select);
 
       select.on('select', function (e) {
