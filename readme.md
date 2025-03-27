@@ -16,10 +16,28 @@ GeoJSON
 
 Adding more historical data files to expand timeline options.
 
-Implementing markers for significant historical events.
 
-Enhancing the UI for improved user experience.
+
+## Setup Instructions
+
+Clone the repository:
+
+`git clone https://github.com/JaC1227/historical-interactive-map`
+
+Install dependencies:
+
+`npm install`
+
+Run the development server:
+
+`npm run dev`
+
+To build for production:
+
+`npm run build`
+
+
 
 ## Credits
 
-Historical GeoJSON data adapted from https://github.com/aourednik/historical-basemaps 
+Historical GeoJSON data adapted from https://github.com/aourednik/historical-basemaps
