@@ -14804,7 +14804,7 @@
       "type": "Feature",
       "properties": {
         "event": "Pacores takes the throne",
-        "marker-color": "#7e7e7e",
+        "marker-color": "#748489",
         "marker-size": "medium",
         "marker-symbol": "circle",
         "description": "Pacores (last well-documented king of the Indo-Parthian kingdom) takes the throne.",
@@ -14823,7 +14823,7 @@
       "type": "Feature",
       "properties": {
         "event": "Hopewell Tradition",
-        "marker-color": "#7e7e7e",
+        "marker-color": "#97668b",
         "marker-size": "medium",
         "marker-symbol": "circle",
         "description": "The Hopewell tradition roughly begins in what is now Ohio.",
@@ -14842,7 +14842,7 @@
       "type": "Feature",
       "properties": {
         "event": "Wheelbarrow",
-        "marker-color": "#7e7e7e",
+        "marker-color": "#c83538",
         "marker-size": "medium",
         "marker-symbol": "circle",
         "description": "In China, the wheelbarrow makes its first appearance.",
