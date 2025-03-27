@@ -169,7 +169,7 @@ window.loadMapData = function (geojsonFile, yearLabel) {
           if (source) {
             // Check if source looks like a URL
             if (source.startsWith("http://") || source.startsWith("https://")) {
-              sourceInfo = `<p><a href="${source}" target="_blank">Source</a></p>`;
+              sourceInfo = `<p><strong>Learn More:</strong> ${source}</p>`;
             } else {
               sourceInfo = `<p><strong>Source:</strong> ${source}</p>`;
             }

@@ -10618,7 +10618,7 @@
           ]
         ]
       },
-      "id": 57
+      "id": 14
     },
     {
       "type": "Feature",
@@ -14818,6 +14818,44 @@
         "type": "Point"
       },
       "id": 25
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Hopewell Tradition",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "description": "The Hopewell tradition roughly begins in what is now Ohio.",
+        "source": "https://en.wikipedia.org/wiki/Hopewell_tradition"
+      },
+      "geometry": {
+        "coordinates": [
+          -82.64317702579952,
+          40.35092884067464
+        ],
+        "type": "Point"
+      },
+      "id": 26
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "event": "Wheelbarrow",
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "description": "In China, the wheelbarrow makes its first appearance.",
+        "source": "https://en.wikipedia.org/wiki/Wheelbarrow#China"
+      },
+      "geometry": {
+        "coordinates": [
+          110.91316267384673,
+          32.135211274437495
+        ],
+        "type": "Point"
+      },
+      "id": 27
     }
   ]
 }
