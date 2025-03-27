@@ -14770,7 +14770,7 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "description": "Timgad (Thamugas), a Roman colonial town in North Africa, is founded by Roman Emperor Trajan",
-        "source": "LeGlay, Marcel; Voisin, Jean-Louis; Le Bohec, Yann (2001). A History of Rome (Second ed.). Malden, Massachusetts: Blackwell. p. 271. ISBN 0-631-21858-0."
+        "source": "https://en.wikipedia.org/wiki/Timgad"
       },
       "geometry": {
         "coordinates": [
@@ -14788,8 +14788,8 @@
         "marker-color": "#8f2124",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "Emperor Trajan and Frontinus become Roman consuls.",
-        "source": "https://roman-empire.net/people/list-of-roman-consuls"
+        "description": "Trajan was the Roman Emperor during 100AD. He ruled from 98AD to 117AD and presided over one of the greatest military expansions in Roman history. Also, in 200AD, Emperor Trajan and Frontinus become Roman consuls.",
+        "source": "https://en.wikipedia.org/wiki/Trajan"
       },
       "geometry": {
         "coordinates": [
@@ -14845,7 +14845,7 @@
         "marker-color": "#c83538",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "description": "In China, the wheelbarrow makes its first appearance.",
+        "description": "In China, the wheelbarrow makes its first appearance (approximate date).",
         "source": "https://en.wikipedia.org/wiki/Wheelbarrow#China"
       },
       "geometry": {
