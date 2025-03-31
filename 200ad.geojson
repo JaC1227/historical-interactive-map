@@ -746,11 +746,11 @@
     {
       "type": "Feature",
       "properties": {
-        "NAME": "Paekche",
-        "ABBREVN": "Paekche",
-        "SUBJECTO": "Paekche",
+        "NAME": "Baekje",
+        "ABBREVN": "Baekje",
+        "SUBJECTO": "Baekje",
         "BORDERPRECISION": 1,
-        "PARTOF": "Paekche"
+        "PARTOF": "Baekje"
       },
       "geometry": {
         "type": "MultiPolygon",
