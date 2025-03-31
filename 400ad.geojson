@@ -11245,7 +11245,7 @@
       "type": "Feature",
       "properties": {
         "event": "Eastern Roman Empire",
-        "descriptions": "January 9, 400 – Emperor Arcadius, who ruled the Eastern Roman Empire from 395 to 408, gives his wife Aelia Eudoxia the official title of Augusta. She is able to wear the purple paludamentum and is depicted in Roman currency.",
+        "description": "January 9, 400 – Emperor Arcadius, who ruled the Eastern Roman Empire from 395 to 408, gives his wife Aelia Eudoxia the official title of Augusta. She is able to wear the purple paludamentum and is depicted in Roman currency.",
         "source": "https://en.wikipedia.org/wiki/Arcadius"
       },
       "geometry": {
