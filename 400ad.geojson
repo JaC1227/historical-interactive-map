@@ -11260,7 +11260,7 @@
       "type": "Feature",
       "properties": {
         "event": "Rome",
-        "desciption": "In 330, The Roman Empire moved it's capital from Rome to the newly (re)built Constantinople. In 395 The Roman Empire permenantly split into a Western and Eastern half after the death of Roman Emperor Theodosius the Great, when his sons, Honorius and Arcadius were made co-rulers, with Arcadius taking the East and Honorius taking the West. Honorius was the Emperor of the Western Roman Empire from 395 until his death in 423",
+        "description": "In 330, The Roman Empire moved it's capital from Rome to the newly (re)built Constantinople. In 395 The Roman Empire permenantly split into a Western and Eastern half after the death of Roman Emperor Theodosius the Great, when his sons, Honorius and Arcadius were made co-rulers, with Arcadius taking the East and Honorius taking the West. Honorius was the Emperor of the Western Roman Empire from 395 until his death in 423",
         "source": "https://en.wikipedia.org/wiki/Honorius"
       },
       "geometry": {
