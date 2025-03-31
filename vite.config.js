@@ -19,7 +19,11 @@ export default defineConfig({
         {
           src: "./300ad.geojson",
           dest: ""
-        }                     
+        },
+        {
+          src: "./400ad.geojson",
+          dest: ""
+        }
       ]
     })
   ],
