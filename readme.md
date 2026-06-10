@@ -12,11 +12,6 @@ Vite
 GeoJSON
 
 
-## Future Improvements
-
-Adding more historical data files to expand timeline options.
-
-
 
 ## Setup Instructions
 
