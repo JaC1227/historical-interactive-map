@@ -2,6 +2,7 @@
 
 This project is an interactive web-based map designed to display historical geopolitical boundaries from different time periods from 1AD to 476AD. The map utilizes OpenLayers for visualization and allows users to switch between multiple GeoJSON files representing various historical eras.
 
+Github Pages Link: https://jac1227.github.io/historical-interactive-map/
 
 ## Technologies Used
 
